@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Search from "./Search";
 
-import App from "./App";
+import "./styles.css";
+
+function App() {
+  return (
+    <div>
+      <h1>Weather App</h1>
+      <Search />
+    </div>
+  );
+}
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  rootElement
-);
+ReactDOM.render(<App />, rootElement);
