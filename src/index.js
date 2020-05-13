@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Search from "./Search";
-import Weather from "./Weather";
+//import Weather from "./Weather";
 
 import "./styles.css";
 
@@ -10,13 +10,6 @@ function App() {
     <div>
       <h1>Weather App</h1>
       <Search />
-      <div>
-        <ul>
-          <li> </li>
-          <li> </li>
-        </ul>
-      </div>
-      <Weather />
     </div>
   );
 }
