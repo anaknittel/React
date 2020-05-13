@@ -10,6 +10,12 @@ function App() {
     <div>
       <h1>Weather App</h1>
       <Search />
+      <div>
+        <ul>
+          <li> </li>
+          <li> </li>
+        </ul>
+      </div>
       <Weather />
     </div>
   );
