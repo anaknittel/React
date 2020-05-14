@@ -1,10 +1,8 @@
 {
-  "name": "react",
+  "name": "react-2",
   "version": "1.0.0",
   "description": "React example starter project",
-  "keywords": [
-    "react"
-  ],
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "axios": "0.19.2",

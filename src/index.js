@@ -5,11 +5,11 @@ import Weather from "./Weather";
 import "./styles.css";
 
 function App() {
-  let [weather, setWeather] = useState(null);
+  let [weather, setWeather] = useState("Lisbon");
 
   return (
     <div>
-      <h1>Weather App</h1>
+      <h1>Weather App - </h1>
       <Weather setWeather={setWeather} />
     </div>
   );
