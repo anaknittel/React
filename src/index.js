@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import Search from "./Search";
-//import Weather from "./Weather";
+import Weather from "./Weather";
 
 import "./styles.css";
 
 function App() {
+  let [weather, setWeather] = useState(null);
+
   return (
     <div>
       <h1>Weather App</h1>
-      <Search />
+      <Weather setWeather={setWeather} />
     </div>
   );
 }
