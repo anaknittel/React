@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import Weather from "./Weather";
+import Search from "./Search";
+import Description from "./Description";
 
 import "./styles.css";
 
 function App() {
-  let [weather, setWeather] = useState("Lisbon");
+  let [weather, setWeather] = useState();
 
   return (
     <div>
-      <h1>Weather App - </h1>
-      <Weather setWeather={setWeather} />
+      <h1>Weather App</h1>
+      <Search setWeather={setWeather} />
+      <p />
+
+      <Description weather={weather} />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function Weather(props) {
+export default function Search(props) {
   let apiKey = "303348dda1fca23adb810a6d9945efb5";
 
   let [cityName, setCityName] = useState("Lisbon");
@@ -14,6 +14,7 @@ export default function Weather(props) {
 
   function handleCityChange(event) {
     setCityName(event.target.value);
+    console.log(event.target.value);
   }
 
   function getWeather(response) {
@@ -23,21 +24,11 @@ export default function Weather(props) {
 
   return (
     <div>
-      <h1>Weather App</h1>
       <div>
         <form onSubmit={handleSearch}>
           <input type="text" onChange={handleCityChange} />
           <input type="submit" value="Search" />
         </form>
-      </div>
-      <div>
-        <ul>
-          <li>Temperature: 20ºC </li>
-          <li>Description: rainy </li>
-          <li>Humidity: 80% </li>
-          <li>Wind: 4m/s </li>
-          <li>Icon</li>
-        </ul>
       </div>
     </div>
   );
