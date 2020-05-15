@@ -7,14 +7,13 @@ import "./styles.css";
 
 function App() {
   let [weather, setWeather] = useState();
-
   return (
     <div>
       <h1>Weather App</h1>
       <Search setWeather={setWeather} />
       <p />
-
       <Description weather={weather} />
+      <p />
     </div>
   );
 }

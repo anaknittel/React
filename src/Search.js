@@ -14,12 +14,10 @@ export default function Search(props) {
 
   function handleCityChange(event) {
     setCityName(event.target.value);
-    console.log(event.target.value);
   }
 
   function getWeather(response) {
     props.setWeather(response.data);
-    console.log(response.data);
   }
 
   return (
