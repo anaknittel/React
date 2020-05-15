@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Description(props) {
   if (props.weather == null) {
-    return <p> Please Search for a City... </p>;
+    return <p> Please Search for a City Above </p>;
   } else {
     let temperature = Math.round(props.weather.main.temp * 10) / 10;
     return (
