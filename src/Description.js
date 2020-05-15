@@ -18,7 +18,7 @@ export default function Description(props) {
                 src={`http://openweathermap.org/img/wn/${
                   props.weather.weather[0].icon
                 }@2x.png`}
-                alt=""
+                alt={props.weather.weather[0].description}
               />
             </div>
           </li>
